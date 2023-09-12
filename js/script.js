@@ -7,14 +7,18 @@ const invitedEmails = [
   'stefano@gmail.com'
 ]
 
+let emailMatching = false ;
+
 console.log(invitedEmails);
+
 const emailRequest = prompt('Inserire email per il controllo');
 
 for (let i = 0; i < invitedEmails.length;i++){
   const checkEmail = invitedEmails[i];
 
 if (checkEmail === emailRequest){
-  console.log('yessss');
+  emailMatching = true;
 }
-  
+
 }
+console.log(emailMatchingsadsa);
