@@ -1,5 +1,5 @@
 let playerRoll,computerRoll;
-
+const output = document.getElementById('output');
 const min = 1;
 const max = 6;
 
@@ -7,13 +7,14 @@ let randomNumber = (Math.floor(Math.random() * (max - min + 1 )) + min);
 
 playerRoll = (Math.floor(Math.random() * (max - min + 1 )) + min);
 console.log(playerRoll);
+
 computerRoll = (Math.floor(Math.random() * (max - min + 1 )) + min);
 console.log(computerRoll);
 
 if (playerRoll === computerRoll){
-  console.log('DRAW');
+  output.innerHTML = 'DRAW';
 }else if (playerRoll < computerRoll){
-  console.log('Computer WIN');
+  output.innerHTML = 'Computer WIN';
 }else {
-  console.log('Player WIN');
+  output.innerHTML ='Player WIN';
 }
