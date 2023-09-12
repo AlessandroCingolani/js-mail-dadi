@@ -9,6 +9,8 @@ const invitedEmails = [
   'fabiola@gmail.com'
 ];
 
+const output = document.getElementById('output');
+
 // flag for check email
 let emailMatching = false ;
 
@@ -28,9 +30,9 @@ if (checkEmail === emailRequest.toLowerCase()){
 
 // print message for invited or not invited
 if(emailMatching){
-  console.log('Sei nella lista invitati puoi entrare!');
+  output.innerHTML ='Sei nella lista invitati puoi entrare!';
 }else {
-  console.log('Mi dispiace non sei nella lista invitati e non puoi entrare!');
+  output.innerHTML ='Mi dispiace non sei nella lista invitati non puoi entrare!';
 }
 
 
