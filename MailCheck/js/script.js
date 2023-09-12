@@ -5,20 +5,30 @@ const invitedEmails = [
   'marioz@gmail.com',
   'federico@gmail.com',
   'stefano@gmail.com'
-]
+];
 
+// flag for check email
 let emailMatching = false ;
 
 console.log(invitedEmails);
 
 const emailRequest = prompt('Inserire email per il controllo');
 
+// check for invited 
 for (let i = 0; i < invitedEmails.length;i++){
   const checkEmail = invitedEmails[i];
 
-if (checkEmail === emailRequest){
+  // tolowercase for transform string
+if (checkEmail === emailRequest.toLowerCase()){
   emailMatching = true;
 }
-
 }
-console.log(emailMatchingsadsa);
+
+// print message for invited or not invited
+if(emailMatching){
+  console.log('Sei nella lista invitati puoi entrare!');
+}else {
+  console.log('Mi dispiace non sei nella lista invitati e non puoi entrare!');
+}
+
+

@@ -8,7 +8,7 @@ stampa un messaggio appropriato sull’esito del controllo.
 2. Creo una variabile prompt per chiedere l email per il check
 3. Creo un loop per il matching dell email 
 4. Se l email corrisponde, stampo messaggio appropiato con un controllo if else
-5. valutare utilizzo di un flag event per dire se il valore è true o false
+5. utilizzo di un flag event per dire se il valore è true o false
 
 Gioco dei dadi
 Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
