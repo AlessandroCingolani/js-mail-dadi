@@ -5,9 +5,9 @@ const max = 6;
 
 let randomNumber = (Math.floor(Math.random() * (max - min + 1 )) + min);
 
-playerRoll = randomNumber;
+playerRoll = (Math.floor(Math.random() * (max - min + 1 )) + min);
 console.log(playerRoll);
-computerRoll = randomNumber;
+computerRoll = (Math.floor(Math.random() * (max - min + 1 )) + min);
 console.log(computerRoll);
 
 if (playerRoll === computerRoll){
