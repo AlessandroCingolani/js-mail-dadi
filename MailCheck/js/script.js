@@ -4,7 +4,9 @@ const invitedEmails = [
   'matam@gmail.com',
   'marioz@gmail.com',
   'federico@gmail.com',
-  'stefano@gmail.com'
+  'stefano@gmail.com',
+  'giuliano@gmail.com',
+  'fabiola@gmail.com'
 ];
 
 // flag for check email
