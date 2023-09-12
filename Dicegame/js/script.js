@@ -1,15 +1,13 @@
 let playerRoll,computerRoll;
 
-const dice = [1,2,3,4,5,6];
+const min = 1;
+const max = 6;
 
-console.log(dice);
+let randomNumber = (Math.floor(Math.random() * (max - min + 1 )) + min);
 
-let randomNumber = Math.floor(Math.random() * dice.length);
-
-playerRoll = dice[randomNumber];
+playerRoll = randomNumber;
 console.log(playerRoll);
-
-computerRoll = dice[randomNumber];
+computerRoll = randomNumber;
 console.log(computerRoll);
 
 if (playerRoll === computerRoll){
